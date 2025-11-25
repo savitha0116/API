@@ -1,0 +1,11 @@
+                  API works 
+APIs (Application Programming Interfaces) are like messengers between different systems, allowing them to communicate and exchange data. Here's a step-by-step explanation of how APIs work, using examples:
+*Example: Online Shopping App*
+Suppose you're using an online shopping app to buy a product. The app needs to fetch product details, prices, and availability from the e-commerce website's server.
+1.  *Request*: The app sends an HTTP request (e.g., GET, POST, PUT, DELETE) to the e-commerce website's API endpoint (e.g., https://api.example.com/products/123).
+2.  *API Gateway*: The request reaches the API gateway, which acts as an entry point for the API.
+3.  *Authentication*: The API gateway checks if the request is authenticated and authorized to access the requested resource.
+4.  *Routing*: The API gateway routes the request to the relevant API endpoint (e.g., getProductDetails).
+5.  *Processing*: The API endpoint processes the request, interacting with the database or other services as needed.
+6.  *Response*: The API endpoint returns a response (e.g., JSON data) to the API gateway.
+7.  *Response Formatting*: The API gateway formats the response into a suitable format (e.g., JSON, XML) and sends it back to the app.
