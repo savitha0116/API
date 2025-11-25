@@ -1,0 +1,33 @@
+Explain the difference between PUT and POST with examples
+
+1. PUT (Update or Replace)
+Purpose:
+PUT is used to update an existing resource or create it only if it doesn’t already exist.
+**Key Characteristics**
+1. Idempotent → Calling PUT multiple times produces the same result.
+2. Client specifies the resource location (URL).
+3. Used for full update or replace.
+*Example : Updating a User
+PUT /users/101
+{
+  "name": "Savvitha",
+  "email": "savvi@example.com"
+}
+*Meaning:
+Replace the details of user with ID 101.
+Even if you send this same request 10 times, the result stays same → user remains updated.
+
+
+2.POST (Create New Resource)
+Purpose:
+POST is used to create a new resource on the server.
+**Key Characteristics**
+1. Not idempotent → Calling POST multiple times creates multiple records.
+2. Server decides the new resource location (ID).
+3. Used for creating or submitting data.
+*Example : Creating a New User
+POST /users
+{
+  "name": "Savvitha",
+  "email": "savvi@example.com"
+}
