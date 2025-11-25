@@ -31,3 +31,12 @@ POST /users
   "name": "Savvitha",
   "email": "savvi@example.com"
 }
+
+| Feature                | PUT                         | POST                         |
+| ---------------------- | --------------------------- | ---------------------------- |
+| **Purpose**            | Update or replace           | Create new                   |
+| **Idempotent**         | Yes                         |  No                         |
+| **Who decides ID/URL** | Client                      | Server                       |
+| **Creates resource**   | Yes (if not exists)         | Yes (always creates)         |
+| **Updates resource**   | Yes                         | Not usually                  |
+| **Use case**           | Update user, replace record | Create new user, submit form |
